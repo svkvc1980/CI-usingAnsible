@@ -1,10 +1,10 @@
 pipeline {
     agent any
 
-        tools
-            {
-                maven "Maven"
-            }
+       tools
+    {
+       maven "Maven"
+    }
      
      
     stages {
@@ -16,7 +16,7 @@ pipeline {
           }
         }
          
-        /*
+       
         stage('Tools Init') {
             steps {
                 script {
@@ -29,7 +29,7 @@ pipeline {
             }
             }
         }
-     */
+  
        
          stage('Execute Maven') {
            steps {
