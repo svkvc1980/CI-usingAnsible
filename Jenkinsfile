@@ -50,9 +50,9 @@ pipeline {
                  
              
                
-               sh "ansible-playbook main.yml -i inventories/dev/hosts --user ec2-user --key-file /home/ec2-user/devopsproject.pem"
+              // sh "ansible-playbook main.yml -i inventories/dev/hosts --user ec2-user --key-file /home/ec2-user/devopsproject.pem"
 
-               
+               sh "ansible-playbook main.yml -i inventories/dev/hosts
             
             }
         }
