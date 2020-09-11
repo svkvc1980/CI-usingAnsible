@@ -6,11 +6,11 @@ pipeline {
       stage('checkout') {
            steps {
              
-                git branch: 'master', url: 'https://github.com/svkvc1980/tomcat-ansible.git'
+                git branch: 'master', url: 'https://github.com/svkvc1980/CI-usingAnsible.git'
              
           }
         }
-       /*  stage('Tools Init') {
+         stage('Tools Init') {
             steps {
                 script {
                     echo "PATH = ${PATH}"
@@ -23,7 +23,7 @@ pipeline {
             }
         }
      
-        */
+       
          stage('Execute Maven') {
            steps {
              
