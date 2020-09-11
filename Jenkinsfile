@@ -10,7 +10,7 @@ pipeline {
              
           }
         }
-         stage('Tools Init') {
+       /*  stage('Tools Init') {
             steps {
                 script {
                     echo "PATH = ${PATH}"
@@ -23,7 +23,7 @@ pipeline {
             }
         }
      
-        
+        */
          stage('Execute Maven') {
            steps {
              
